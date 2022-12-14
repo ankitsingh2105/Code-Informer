@@ -65,7 +65,7 @@ async function display1() {
 async function display2() {
     let info2 = document.querySelector(".info2");
     section[2].style.display = "none";
-    let p3 = await fetch("https://kontests.net/api/v1/top_coder");
+    let p3 = await fetch("https://kontests.net/api/v1/at_coder");
     let e = await p3.json();
     e.forEach((element, index) => {
         const { name, url, start_time, end_time, duration, status } = element
