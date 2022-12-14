@@ -35,7 +35,7 @@ async function display() {
 async function display1() {
     let info1 = document.querySelector(".info1");
     section[1].style.display = "none";
-    let p = await fetch("https://kontests.net/api/v1/codeforces");
+    let p = await fetch("https://kontests.net/api/v1/code_chef");
     let e = await p.json();
     e.forEach((element, index) => {
         const { name, url, start_time, end_time, duration, status } = element
@@ -51,7 +51,7 @@ async function display1() {
            <li class="gray1" ><strong class="blue">End Time   :</strong> ${day[endtime.getDay() - 1]} - ${endtime.toLocaleString()}<br/></li>
            </div>
            <div class="align">
-           <a class="remove" href="https://codeforces.com/contests" >
+           <a class="remove" href="https://codeforces.com/contestshttps://www.codechef.com/contests?itm_medium=navmenu&itm_campaign=allcontests" >
            </a>
            <div></div>
            </div>
@@ -65,7 +65,7 @@ async function display1() {
 async function display2() {
     let info2 = document.querySelector(".info2");
     section[2].style.display = "none";
-    let p3 = await fetch("https://kontests.net/api/v1/codeforces");
+    let p3 = await fetch("https://kontests.net/api/v1/top_coder");
     let e = await p3.json();
     e.forEach((element, index) => {
         const { name, url, start_time, end_time, duration, status } = element
